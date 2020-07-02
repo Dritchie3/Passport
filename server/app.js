@@ -3,6 +3,9 @@ const path = require("path");
 const logger = require("morgan");
 const jwt = require("./config/jwt");
 const { User } = require("./models");
+const passport = require("passport");
+const mongoose = require("mongoose");
+const routes = require("./routes");
 const {
   UNAUTHORIZED,
   BAD_REQUEST,
@@ -13,6 +16,10 @@ const {
 const app = express();
 app.set("port", process.env.PORT || 3001);
 app.use(logger("dev"));
+app.use(express.json());
+
+// Define middleware here
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const { initPassport, authenticate } = require("./config/passport");
@@ -74,8 +81,13 @@ app.get("/api/users/:id", authenticate(), (req, res) => {
 });
 
 // Serve static assets in production only
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.join(__dirname, "../client/build")));
+// }
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../client/build")));
+  app.use(express.static("client/build"));
+} else {
+  app.use(express.static("client/public"));
 }
 
 module.exports = { app };

@@ -1,0 +1,53 @@
+.jumbotron {
+  background-image: url("../images/codepro.jpeg");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 95%;
+
+  min-height: 180px;
+
+  padding-top: 100px;
+  margin: 0px;
+  margin-bottom: 5%;
+  display: table;
+
+  padding: 20px 20px;
+  color: whitesmoke;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.titleHead {
+  font-size: 150px;
+  color: rebeccapurple;
+}
+h4 {
+  font-size: 40px;
+  color: rebeccapurple;
+}
+h5 {
+  font-size: 35px;
+  color: black;
+}
+.form-group {
+  width: 350px;
+}
+h6 {
+  font-size: 100px;
+  color: rebeccapurple;
+}
+p {
+  font-size: 45px;
+}
+h3 {
+  color: purple;
+  font-size: 60px;
+}
+li {
+  float: Right;
+  color: lime;
+  font-size: 25px;
+}
+a {
+  color: red;
+}

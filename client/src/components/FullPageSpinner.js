@@ -1,3 +1,5 @@
+// from Passport clone
+
 import React from "react";
 
 const FullPageSpinner = ({ text = "Loading..." }) => (

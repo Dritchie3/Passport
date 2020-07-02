@@ -18,10 +18,10 @@
   "author": "John Desrosiers",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^5.0.2",
-    "husky": "^4.0.10",
+    "concurrently": "^5.2.0",
+    "husky": "^4.2.5",
     "lint-staged": "^9.5.0",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.4",
     "prettier": "^1.19.1"
   },
   "husky": {
@@ -40,11 +40,11 @@
     "cross-env": "^6.0.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-session": "^1.17.0",
+    "express-session": "^1.17.1",
     "if-env": "^1.0.4",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.8.9",
-    "morgan": "^1.9.1",
+    "mongoose": "^5.9.21",
+    "morgan": "^1.10.0",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0"
   }
